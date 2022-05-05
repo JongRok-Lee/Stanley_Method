@@ -5,15 +5,14 @@ PID로 조향각을 제어해 보았지만, **게인 튜닝에 머리가 깨질 
 ## Stanley Method 컨셉  
 ![](https://velog.velcdn.com/images/openjr/post/f8e2f048-a57a-43b8-b1b4-98d78910c91a/image.png)  
 Stanley method (SM)은 따라가고자 하는 **1) 차선의 곡률**과, **2) 횡방향 오차**($e$)를 사용하여 차량의 조향각을 제어하는 방식입니다.  
-![](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)  
 <img src="https://latex.codecogs.com/svg.latex?\delta=\psi+\tan^{-1}{\frac{ke}{v_x}}" title="\delta=\psi+\tan^{-1}{\frac{ke}{v_x}}" />  
-1. $\delta$: 조향각 (steering angle)  
-2. $\psi$: 현재 차량의 Yaw값과 차선의 곡률 각도와의 차이 각  
-ex) 위 그림에서 차선의 곡률 각도: -15˚, 현재 차량의 Yaw: -5˚ -> $\psi=-15˚-(-5)˚=-10˚$  
-3. $k$: Gain 값, 임의로 지정 가능  
-4. $e$: 횡방향 오차, 현재 추종하는 차선의 중심 위치와 차량의 앞바퀴 사이의 **최단 거리**.  
+1. δ: 조향각 (steering angle)  
+2. Ψ: 현재 차량의 Yaw값과 차선의 곡률 각도와의 차이 각  
+ex) 위 그림에서 차선의 곡률 각도: -15˚, 현재 차량의 Yaw: -5˚ -> Ψ=-15˚-(-5)˚=-10˚  
+3. k: Gain 값, 임의로 지정 가능  
+4. e: 횡방향 오차, 현재 추종하는 차선의 중심 위치와 차량의 앞바퀴 사이의 **최단 거리**.  
 **※중요※ 즉, 차선과 앞바퀴 좌표(A)와, 앞바퀴와 최단거리인 차선의 좌표(B) 사이 직선은 B좌표에서의 곡률 각도와 수직이다**  
-5. $v_x$: 차량의 종방향 속도  
+5. <img src="https://latex.codecogs.com/svg.latex?v_x" title="v_x" />: 차량의 종방향 속도  
 
 
 ### 1) 차선의 곡률  
