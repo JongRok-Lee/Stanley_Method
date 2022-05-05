@@ -24,7 +24,7 @@ ex) 위 그림에서 차선의 곡률 각도: -15˚, 현재 차량의 Yaw: -5˚ 
 
 횡방향 오차의 수식은 위의 원본 논문에서 발췌한 것과 같이 SM의 코어에 해당하는 비선형 함수로 기하급수적으로 횡방향 오차가 0으로 수렴하도록 만듭니다. 또한 k는 얼마나 빠르게 0으로 수렴할지 정해주는 파라미터로 작용합니다.  
 <img src="https://latex.codecogs.com/svg.latex?\dot{e}(t)=v_x(t)\sin{\tan^{-1}{\frac{ke(t)}{v_x(t)}}}" title="\dot{e}(t)=v_x(t)\sin{\tan^{-1}{\frac{ke(t)}{v_x(t)}}}" />  
-<img src="https://latex.codecogs.com/svg.latex?e(t)\approx e(0)e^{-kt}" title="e(t)\approx e(0)e^{-kt}" />  
+<img src="https://latex.codecogs.com/svg.latex?e(t)\approx%20e(0)e^{-kt}" title="e(t)\approx%20e(0)e^{-kt}" />  
 
 ## 결과  
 ![](https://velog.velcdn.com/images/openjr/post/e64baee6-328c-4335-b9ab-e2013f97cf90/image.png)  
