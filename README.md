@@ -1,19 +1,12 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Stanley_Method
 자율주행 제어에 있어서 유명한 횡방향 제어 기법 중 하나인 **Stanley method**에 대해 총 정리를 하고자 합니다.
 PID로 조향각을 제어해 보았지만, **게인 튜닝에 머리가 깨질 것 같은 고통**을 느끼고 자율주행에서 훨씬 많이 쓰이고 유명한 Stanley method의 필요성을 절실히 실감하여, 공부하고 정리하였습니다.
 
 ## Stanley Method 컨셉
 ![](https://velog.velcdn.com/images/openjr/post/f8e2f048-a57a-43b8-b1b4-98d78910c91a/image.png)
-
-
 Stanley method (SM)은 따라가고자 하는 **1) 차선의 곡률**과, **2) 횡방향 오차**($e$)를 사용하여 차량의 조향각을 제어하는 방식입니다.
 
-$$
-
-\delta = \psi +\tan^{-1}{\frac{ke}{v_x}}
-
-$$
+$$\delta = \psi +\tan^{-1}{\frac{ke}{v_x}}$$
 
 1. $\delta$: 조향각 (steering angle)
 2. $\psi$: 현재 차량의 Yaw값과 차선의 곡률 각도와의 차이 각
