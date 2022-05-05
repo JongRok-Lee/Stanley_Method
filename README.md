@@ -6,7 +6,7 @@ PID로 조향각을 제어해 보았지만, **게인 튜닝에 머리가 깨질 
 ![](https://velog.velcdn.com/images/openjr/post/f8e2f048-a57a-43b8-b1b4-98d78910c91a/image.png)  
 Stanley method (SM)은 따라가고자 하는 **1) 차선의 곡률**과, **2) 횡방향 오차**($e$)를 사용하여 차량의 조향각을 제어하는 방식입니다.  
 ![](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)  
-<img src="https://latex.codecogs.com/svg.latex?\delta = \psi +\tan^{-1}{\frac{ke}{v_x}}" title="\delta = \psi +\tan^{-1}{\frac{ke}{v_x}}" />  
+<img src="https://latex.codecogs.com/svg.latex?\delta=\psi+\tan^{-1}{\frac{ke}{v_x}}" title="\delta=\psi+\tan^{-1}{\frac{ke}{v_x}}" />  
 1. $\delta$: 조향각 (steering angle)  
 2. $\psi$: 현재 차량의 Yaw값과 차선의 곡률 각도와의 차이 각  
 ex) 위 그림에서 차선의 곡률 각도: -15˚, 현재 차량의 Yaw: -5˚ -> $\psi=-15˚-(-5)˚=-10˚$  
