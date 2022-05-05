@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Stanley_Method
 자율주행 제어에 있어서 유명한 횡방향 제어 기법 중 하나인 **Stanley method**에 대해 총 정리를 하고자 합니다.
 PID로 조향각을 제어해 보았지만, **게인 튜닝에 머리가 깨질 것 같은 고통**을 느끼고 자율주행에서 훨씬 많이 쓰이고 유명한 Stanley method의 필요성을 절실히 실감하여, 공부하고 정리하였습니다.
